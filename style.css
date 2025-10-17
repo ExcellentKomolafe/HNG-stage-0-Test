@@ -8,22 +8,21 @@
 
 body {
   min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   color: #1a202c;
 }
 
 .profile-card {
-  max-width: 920px;
+  max-width: 100%;
   background: #ffffff;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
   transition: width 0.5s ease, height 0.5s ease, opacity 0.5s ease, box-shadow 0.3s ease;
 }
 
-.profile-card:hover {
-  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.2);
-}
 .hide-profile-card{
   width: 0;
   height: 0;
