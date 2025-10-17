@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
 let savedCoverPhoto = 'savedCoverPhoto';
 
 const userProfile = {
-  profilePic: getFromLocalStorage(savedPFP, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiOvPU0ROrQAWuyUdmjpWrafwrUCmAy4rkOg&usqp=CAU'),
-  coverPhoto: getFromLocalStorage(savedCoverPhoto, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiOvPU0ROrQAWuyUdmjpWrafwrUCmAy4rkOg&usqp=CAU'),
+  profilePic: getFromLocalStorage(savedPFP, './IMG_20251012_135323_011.jpg'),
+  coverPhoto: getFromLocalStorage(savedCoverPhoto, './IMG_20251012_135323_011.jpg'),
   username: getFromLocalStorage('savedUsername', 'Jhon Doe'),
   imgURL: '',
   bio: getFromLocalStorage("savedBio", "Let people Know who you are E.g I'm John Doe a React web developer. with 10 years of experience let us connect ❤️❤️"),
