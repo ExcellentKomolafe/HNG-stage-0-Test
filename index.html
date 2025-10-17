@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>Profile card</title>
+</head>
+<body>
+  
+  <article
+    class="profile-card"     
+    data-testid="test-profile-card"
+  > 
+    <figure class="avatar-profile-section">
+     <div class="avatar-container">
+        <img src="" alt="avatar" data-testid="test-user-avatar" class="avatar-cover-photo">
+        <img src="" alt="avatar" data-testid="test-user-avatar" class="avatar">
+      </div>
+      <div class="url-btn-container">
+        
+        <h2
+     arial-label="user name"
+     data-testid="test-user-name"
+     class="username"
+   >
+     
+     <figcaption class="img-url">https://excellentkomolafe.netlify.app</figcaption>
+   </h2>
+        <button class="edit-profile-btn">Edit Profile</button>
+        
+       </div>
+       <p class="time">Time in milliseconds: <span class="time-milli" data-testid="test-user-time"></span></p>
+    </figure> 
+    <br/>
+    <hr/>
+  <div class="description">
+   
+  
+      
+   <ul 
+     class="social-link-sec" 
+      data-id="test-user-social-links">
+      
+      <h3 class="contact">Contacts</h3>
+     
+     <li class="social-link-list">
+       <a href="" data-testid="test-user-social-linkedIn" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+     </li>
+     
+     
+     <li class="social-link-list">
+       
+       <a href="" data-testid="test-user-social-twitter" rel="noopener noreferrer" target="_blank">Twitter</a>
+     </li>
+  </ul>
+  <br />
+    <div class="bio-container">
+      <h3 class="bio-title">Bio</h3>
+    <p class="bio">
+      
+    </p>
+  </div>
+  
+  <br />
+ <div class="likes-dislike-div"> 
+  <section class="hobbies" data-testid="test-user-hobbies">
+    <h3 class="Hobbies-title">Hobbies</h3>
+    <ul class="Hobbies-ul">
+      <li>i like sweet</li>
+    </ul>
+  </section>
+
+  
+   <section class="dislikes" data-testid="test-user-dislikes">
+   <h3 class="dislikes-title">Dislikes</h3>
+     
+    <ul class="Dislikes-ul">
+       <li>i dislike snndn</li>
+    </ul>
+  </section>
+  
+  </div>
+ </div>
+  </article>
+  
+  <div class="edit-profile-container"> 
+     
+  <h2 class="section-title">Edit Profile</h2>  
+   <div class="save-div">
+     <button class="save">Save</button>
+   </div>
+  <label for="avatar-cover-photo" class="input-label">Cover Photo</label>  
+  <div class="cover-photo-input-group"> 
+    <label class="file-upload-label">
+      <input type="file" id="avatar-cover-photo-input" accept=".jpg, .jpeg, .png" class="file-input">
+      <span class="file-button">Upload Cover Photo</span>
+    </label>
+    <br/>
+    <input type="text" placeholder="Upload image URL instead" class="text-input url-cover-photo">
+  </div>  
+  <br />
+  <label for="avatar-photo-input" class="input-label">Profile Photo</label>  
+  <div class="avatar-photo-input-group">  
+    <label class="file-upload-label">
+      <input type="file" id="avatar-photo-input" accept=".jpg, .jpeg, .png" class="file-input">
+      <span class="file-button">Upload Profile Picture</span>
+    </label>
+    <br/>
+    <input type="text" placeholder="Or upload image URL instead" class="text-input url-PFP">
+  </div>  
+
+  <div class="input-group">  
+    <input type="text" placeholder="Name" class="text-input username-input">  
+  </div>  
+
+  <div class="input-group">  
+    <textarea placeholder="Bio" class="textarea-input bio-input"></textarea>  
+  </div>  
+
+  <div class="input-group">  
+    <input type="text" placeholder="Likes" class="text-input likes-input">  
+  </div>  
+
+  <div class="input-group">  
+    <input type="text" placeholder="Dislikes" class="text-input dislikes-input">  
+  </div>  
+  <div class="input-group">
+      <input type="text" class="social-name-input text-input" placeholder="Platform name e.g. Twitter">
+  </div>
+
+  <div class="input-group">
+<input type="url" class="social-url-input text-input" placeholder="Profile URL">
+</div>
+
+  <button class="reset">Reset</button>
+</div>
+</div>
+  
+  <script src="./script.js" defer></script>
+</body>
+</html>
