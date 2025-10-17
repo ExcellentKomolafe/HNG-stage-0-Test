@@ -135,6 +135,7 @@ saveBtn.addEventListener('click', () => {
 function updateDescriptions(input, savedItem, description) {
   input.addEventListener('change', (e) => {
   saveToLocalStorage(savedItem, e.target.value);  
+  description.textContent = e.target.value;
   if(description === username) {
     userProfile.username = e.target.value;
   }
