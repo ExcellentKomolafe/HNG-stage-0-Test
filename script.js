@@ -5,7 +5,7 @@ let savedCoverPhoto = 'savedCoverPhoto';
 const userProfile = {
   profilePic: getFromLocalStorage(savedPFP, './IMG_20251012_135323_011.jpg'),
   coverPhoto: getFromLocalStorage(savedCoverPhoto, './IMG_20251012_135323_011.jpg'),
-  username: getFromLocalStorage('savedUsername', 'Jhon Doe'),
+  username: getFromLocalStorage('savedUsername', 'Komolafe Ayoola'),
   imgURL: '',
   bio: getFromLocalStorage("savedBio", "Let people Know who you are E.g I'm John Doe a React web developer. with 10 years of experience let us connect ❤️❤️"),
   likes: getFromLocalStorage('savedLikes', ''),
@@ -199,6 +199,8 @@ const resetBtn = document.querySelector('.reset');
 
 function socialLinks(inputName, inputURL, savedItem, container) {
   let links = JSON.parse(localStorage.getItem(savedItem) || '[]');
+if(links.length === 0) links[0] = {name: 'LinkedIn',
+url:'https://www.linkedin.com/in/ayoola-komolafe-b0871230a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'}
   render();
 
   inputName.addEventListener('change', addLink);
