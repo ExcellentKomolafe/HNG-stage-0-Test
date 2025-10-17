@@ -18,6 +18,7 @@ body {
 
 .profile-card {
   max-width: 920px;
+  width: 100%;
   background: #ffffff;
   border-radius: 20px;
   overflow: hidden;
