@@ -8,15 +8,16 @@
 
 body {
   min-height: 100dvh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   color: #1a202c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
 }
 
 .profile-card {
-  max-width: 100%;
+  max-width: 920px;
   background: #ffffff;
   border-radius: 20px;
   overflow: hidden;
